@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_editor_absoluteX="0dp"
     app:layout_editor_absoluteY="81dp">
 
     <ImageView
-        android:src="@drawable/singapore"
-        android:layout_width="184dp"
-        android:layout_height="203dp"
-        app:layout_editor_absoluteX="100dp"
-        app:layout_editor_absoluteY="68dp"
         android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="214dp"
+        android:contentDescription="@string/placeholder"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/placeholder" />
+        android:src="@drawable/singapore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="100dp"
+        app:layout_editor_absoluteY="68dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="#03A9F4"
+        android:text="@string/camera"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="#03A9F4"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="286dp" />
+
 </android.support.constraint.ConstraintLayout>
